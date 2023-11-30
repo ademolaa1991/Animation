@@ -1,0 +1,77 @@
+body {
+    background-color: blueviolet;
+    animation: move 4s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.balls {
+    background-color: aliceblue;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    animation: bounce 1s infinite
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+span {
+    text-decoration: underline;
+}
+
+@keyframes move {
+    10% {
+        background-color: rgb(238, 102, 102);
+    }
+    25% {
+        background-color: rgb(127, 255, 168);
+    }
+    25% {
+        background-color: rgb(179, 47, 255);
+    }
+    30% {
+        background-color: orange;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 23rem; left: 0%;
+    }
+    10% {
+        top: 19rem; left: 10%;
+    }
+    20% {
+        top: 23rem; left: 0%;
+    }
+    30% {
+        top: 19rem; left: 10%;
+    }
+    40% {
+        top: 23rem; left: 0%;
+    }
+    50% {
+        top: 19rem; left: 10%;
+    }
+    60% {
+        top: 23rem; left: 0%;
+    }
+    70% {
+        top: 19rem; left: 10%;
+    }
+    80% {
+        top: 23rem; left: 0%;
+    }
+    90% {
+        top: 19rem; left: 90%;
+    }
+    100% {
+        top: 23rem; left: 100%;
+
+    }
+}
